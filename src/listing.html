@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Listings</title>
+    
+    <!-- font awesome cdn link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
+
+    
+    
+    <link href="../dist/output.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body style="background-color: #EEEEEE;">
+
+    <div class="p-6 bg-black header">
+        <div class="container flex justify-between mx-auto text-white">
+                <div class="logo">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6 mr-1 text-red-700">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                          </svg>
+                          My home                      
+                    </a>
+                </div>
+                <div class="navbar">
+                    <ul class="hidden md:block md:flex md:justify-end">
+                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">Home</a></li>
+                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">Contact</a></li>
+                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">Blogs</a></li>
+                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div id="menu-btn" class="cursor-pointer fas fa-bars md:hidden"></div>
+        </div>
+    </div>
+
+    <section class="slider">     
+        
+        <div id="default-carousel" class="relative" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                    <img src="https://media.istockphoto.com/id/188140676/photo/luxury-home.jpg?b=1&s=170667a&w=0&k=20&c=jy01m84K0cYEVyNczSwkcVl_7p82Ph9oZM2Psog6At0=" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://media.istockphoto.com/id/1426375531/photo/row-of-homes-in-the-midwest.jpg?b=1&s=170667a&w=0&k=20&c=Kab0JPkvCzHcreBeDf_sD5XpKEUdIImHEdpUUQXVPLA=" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://media.istockphoto.com/id/1368330586/photo/front-porch-and-entrance-to-new-home.jpg?b=1&s=170667a&w=0&k=20&c=g2W2k7VFWMrreuPjL_JX7B8Ztswk0Ag9Wf8tkU4poDA=" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+    </section>
+
+    <section class="listings">
+
+        <h1 class="heading my-5">featured listings</h1>
+
+        <div class="container mx-auto">
+
+            <div class="box-all grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="box bg-[#fff] p-4">
+                    <div class="admin flex gap-4">
+                        <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
+                        <div>
+                            <p>Anh Tuan</p>
+                            <span>10-11-2022</span>
+                        </div>
+                    </div>
+                    <div class="thumb relative overflow-hidden my-4">
+                        <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+
+                            <span>4</span>
+                        </div>
+                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
+                            <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                  </svg>                                 
+                            </button>
+                        </div>
+                        <div class="absolute z-10 flex items-center text-white bottom-2 left-2">
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                    </div>
+                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <p class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>
+                          Hanoi city, Vietnamese             
+                    </p>
+                    <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                    </div>
+                    <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
+                </div>
+                <div class="box bg-[#fff] p-4">
+                    <div class="admin flex gap-4">
+                        <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
+                        <div>
+                            <p>Anh Tuan</p>
+                            <span>10-11-2022</span>
+                        </div>
+                    </div>
+                    <div class="thumb relative overflow-hidden my-4">
+                        <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+
+                            <span>4</span>
+                        </div>
+                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
+                            <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                  </svg>                                 
+                            </button>
+                        </div>
+                        <div class="absolute z-10 flex items-center text-white bottom-2 left-2">
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                    </div>
+                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <p class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>
+                          Hanoi city, Vietnamese             
+                    </p>
+                    <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                    </div>
+                    <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
+                </div>
+                <div class="box bg-[#fff] p-4">
+                    <div class="admin flex gap-4">
+                        <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
+                        <div>
+                            <p>Anh Tuan</p>
+                            <span>10-11-2022</span>
+                        </div>
+                    </div>
+                    <div class="thumb relative overflow-hidden my-4">
+                        <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+
+                            <span>4</span>
+                        </div>
+                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
+                            <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                  </svg>                                 
+                            </button>
+                        </div>
+                        <div class="absolute z-10 flex items-center text-white bottom-2 left-2">
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                    </div>
+                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <p class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>
+                          Hanoi city, Vietnamese             
+                    </p>
+                    <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                    </div>
+                    <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
+                </div>
+                <div class="box bg-[#fff] p-4">
+                    <div class="admin flex gap-4">
+                        <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
+                        <div>
+                            <p>Anh Tuan</p>
+                            <span>10-11-2022</span>
+                        </div>
+                    </div>
+                    <div class="thumb relative overflow-hidden my-4">
+                        <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+
+                            <span>4</span>
+                        </div>
+                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
+                            <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                  </svg>                                 
+                            </button>
+                        </div>
+                        <div class="absolute z-10 flex items-center text-white bottom-2 left-2">
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                    </div>
+                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <p class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>
+                          Hanoi city, Vietnamese             
+                    </p>
+                    <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                    </div>
+                    <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
+                </div>
+                <div class="box bg-[#fff] p-4">
+                    <div class="admin flex gap-4">
+                        <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
+                        <div>
+                            <p>Anh Tuan</p>
+                            <span>10-11-2022</span>
+                        </div>
+                    </div>
+                    <div class="thumb relative overflow-hidden my-4">
+                        <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+
+                            <span>4</span>
+                        </div>
+                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
+                            <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                  </svg>                                 
+                            </button>
+                        </div>
+                        <div class="absolute z-10 flex items-center text-white bottom-2 left-2">
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                    </div>
+                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <p class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>
+                          Hanoi city, Vietnamese             
+                    </p>
+                    <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                    </div>
+                    <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
+                </div>
+                <div class="box bg-[#fff] p-4">
+                    <div class="admin flex gap-4">
+                        <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
+                        <div>
+                            <p>Anh Tuan</p>
+                            <span>10-11-2022</span>
+                        </div>
+                    </div>
+                    <div class="thumb relative overflow-hidden my-4">
+                        <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+
+                            <span>4</span>
+                        </div>
+                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
+                            <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                  </svg>                                 
+                            </button>
+                        </div>
+                        <div class="absolute z-10 flex items-center text-white bottom-2 left-2">
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
+                            <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                    </div>
+                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <p class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>
+                          Hanoi city, Vietnamese             
+                    </p>
+                    <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                    </div>
+                    <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
+                </div>               
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer mt-[2rem] bg-black p-[2rem]">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 text-white p-[1rem] gap-6 md:grid-cols-3">
+                <div class="flex flex-col gap-5 box">
+                    <a href="tel:1234567890"><i class="mr-2 text-red-700 fas fa-phone"></i><span class="duration-300 hover:ml-2">1234567890</span></a>
+                    <a href="tel:11112223333"><i class="mr-2 text-red-700 fas fa-phone"></i><span class="duration-300 hover:ml-2">11112223333</span></a>
+                    <a href="mailto:tuan@gmail.com"><i class="mr-2 text-red-700 fas fa-envelope"></i><span class="duration-300 hover:ml-2">tuan@gmail.com</span></a>
+                    <a href="#"><i class="mr-2 text-red-700 fas fa-map-marker"></i><span class="duration-300 hover:ml-2">Ha Noi City, Vietnamese</span></a>                      
+                </div>
+                <div class="flex flex-col gap-5 text-center box">
+                    <a href="#"><span class="hover:underline">home</span></a>
+                    <a href="#"><span class="hover:underline">about</span></a>
+                    <a href="#"><span class="hover:underline">contact</span></a>
+                    <a href="#"><span class="hover:underline">all listing</span></a>
+                    <a href="#"><span class="hover:underline">saved properties</span></a>
+                </div>
+                <div class="flex flex-col gap-5 text-right box">
+                    <a href="#"><span class="duration-300 hover:ml-2">facebook</span><i class="ml-2 text-red-700 fab fa-facebook"></i></a>
+                    <a href="#"><span class="duration-300 hover:ml-2">twitter</span><i class="ml-2 text-red-700 fab fa-twitter"></i></a>
+                    <a href="#"><span class="duration-300 hover:ml-2">linkedin</span><i class="ml-2 text-red-700 fab fa-linkedin"></i></a>
+                    <a href="#"><span class="duration-300 hover:ml-2">instagram</span><i class="ml-2 text-red-700 fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>

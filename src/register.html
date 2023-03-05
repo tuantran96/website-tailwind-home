@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <!-- font awesome cdn link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
+
+    
+    
+    <link href="../dist/output.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body style="background-color: #EEEEEE;">
+
+    <div class="p-6 bg-black header">
+        <div class="container flex justify-between mx-auto text-white">
+                <div class="logo">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6 mr-1 text-red-700">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                          </svg>
+                          My home                      
+                    </a>
+                </div>
+                <div class="navbar">
+                    <ul class="hidden md:block md:flex md:justify-end">
+                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">Home</a></li>
+                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">Contact</a></li>
+                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">Blogs</a></li>
+                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div id="menu-btn" class="cursor-pointer fas fa-bars md:hidden"></div>
+        </div>
+    </div>
+
+    <section class="slider">     
+        
+        <div id="default-carousel" class="relative" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                    <img src="https://media.istockphoto.com/id/188140676/photo/luxury-home.jpg?b=1&s=170667a&w=0&k=20&c=jy01m84K0cYEVyNczSwkcVl_7p82Ph9oZM2Psog6At0=" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://media.istockphoto.com/id/1426375531/photo/row-of-homes-in-the-midwest.jpg?b=1&s=170667a&w=0&k=20&c=Kab0JPkvCzHcreBeDf_sD5XpKEUdIImHEdpUUQXVPLA=" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://media.istockphoto.com/id/1368330586/photo/front-porch-and-entrance-to-new-home.jpg?b=1&s=170667a&w=0&k=20&c=g2W2k7VFWMrreuPjL_JX7B8Ztswk0Ag9Wf8tkU4poDA=" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+    </section>
+
+    <section class="register">
+        
+        <div class="container mx-auto">
+            
+            <div class="max-w-xl mx-auto form-all bg-[#fff] p-8 mt-8 shadow-lg">
+            
+                <form action="" method="post">
+                    
+                    <h3 class="mb-5 text-2xl font-bold text-center capitalize">create an account!</h3>
+                    <input type="tel" name="name" required maxlength="50" placeholder="enter your name" id="" class="w-full mb-4 box">
+                    <input type="email" name="email" required maxlength="50" placeholder="enter your email" id="" class="w-full mb-4 box">
+                    <input type="password" name="pass" required maxlength="20" placeholder="enter your password" id="" class="w-full mb-4 box">
+                    <input type="password" name="c_pass" required maxlength="20" placeholder="confirm your password" id="" class="w-full mb-4 box">
+                    <p class="mb-4 text-lg text-center">already have an account? <a href="login.html" class="text-[#D81D1F] hover:underline">login now</a></p>
+                    <input type="submit" value="register now" name="submit" class="w-full btn">
+                </form>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer mt-[5rem] bg-black p-[2rem]">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 text-white p-[1rem] gap-6 md:grid-cols-3">
+                <div class="flex flex-col gap-5 box">
+                    <a href="tel:1234567890"><i class="mr-2 text-red-700 fas fa-phone"></i><span class="duration-300 hover:ml-2">1234567890</span></a>
+                    <a href="tel:11112223333"><i class="mr-2 text-red-700 fas fa-phone"></i><span class="duration-300 hover:ml-2">11112223333</span></a>
+                    <a href="mailto:tuan@gmail.com"><i class="mr-2 text-red-700 fas fa-envelope"></i><span class="duration-300 hover:ml-2">tuan@gmail.com</span></a>
+                    <a href="#"><i class="mr-2 text-red-700 fas fa-map-marker"></i><span class="duration-300 hover:ml-2">Ha Noi City, Vietnamese</span></a>                      
+                </div>
+                <div class="flex flex-col gap-5 text-center box">
+                    <a href="#"><span class="hover:underline">home</span></a>
+                    <a href="#"><span class="hover:underline">about</span></a>
+                    <a href="#"><span class="hover:underline">contact</span></a>
+                    <a href="#"><span class="hover:underline">all listing</span></a>
+                    <a href="#"><span class="hover:underline">saved properties</span></a>
+                </div>
+                <div class="flex flex-col gap-5 text-right box">
+                    <a href="#"><span class="duration-300 hover:ml-2">facebook</span><i class="ml-2 text-red-700 fab fa-facebook"></i></a>
+                    <a href="#"><span class="duration-300 hover:ml-2">twitter</span><i class="ml-2 text-red-700 fab fa-twitter"></i></a>
+                    <a href="#"><span class="duration-300 hover:ml-2">linkedin</span><i class="ml-2 text-red-700 fab fa-linkedin"></i></a>
+                    <a href="#"><span class="duration-300 hover:ml-2">instagram</span><i class="ml-2 text-red-700 fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>

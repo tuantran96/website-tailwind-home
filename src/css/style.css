@@ -1,0 +1,11 @@
+.faq .box-all .box p {
+    display: none;
+}
+
+.faq .box-all .box.active p {
+    display: block;
+}
+
+.faq .box-all .box.active h3 {
+    background-color: #D81D1F;
+}
