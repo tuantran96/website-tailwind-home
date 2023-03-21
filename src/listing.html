@@ -31,10 +31,10 @@
                 </div>
                 <div class="navbar">
                     <ul class="hidden md:block md:flex md:justify-end">
-                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">Home</a></li>
-                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">Contact</a></li>
-                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">Blogs</a></li>
-                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="#">FAQ</a></li>
+                        <li class="cursor-pointer md:ml-[4rem] hover:text-red-700"><a href="home.html">Home</a></li>
+                        <li class="cursor-pointer md:ml-[4rem] hover:red-700"><a href="contact.html">Contact</a></li>
+                        <li class="cursor-pointer md:ml-[4rem] hover:red-700"><a href="blogs.html">Blogs</a></li>
+                        <li class="cursor-pointer md:ml-[4rem] hover:red-700"><a href="contact.html#faq">FAQ</a></li>
                     </ul>
                 </div>
 
@@ -86,20 +86,20 @@
 
     <section class="listings">
 
-        <h1 class="heading my-5">featured listings</h1>
+        <h1 class="my-5 heading">featured listings</h1>
 
         <div class="container mx-auto">
 
-            <div class="box-all grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 gap-4 box-all md:grid-cols-2 lg:grid-cols-3">
                 <div class="box bg-[#fff] p-4">
-                    <div class="admin flex gap-4">
+                    <div class="flex gap-4 admin">
                         <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
                         <div>
                             <p>Anh Tuan</p>
                             <span>10-11-2022</span>
                         </div>
                     </div>
-                    <div class="thumb relative overflow-hidden my-4">
+                    <div class="relative my-4 overflow-hidden thumb">
                         <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -107,7 +107,7 @@
 
                             <span>4</span>
                         </div>
-                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <p class="absolute z-10 type bottom-4 left-4"><span>house</span><span>sale</span></p>
                         <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
                             <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -119,9 +119,9 @@
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="object-cover w-full h-full duration-150 ease-out z-1 hover:ease-in hover:scale-105">
                     </div>
-                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <h3 class="my-3 text-xl name">modern flats and appartments</h3>
                     <p class="my-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -130,21 +130,21 @@
                           Hanoi city, Vietnamese             
                     </p>
                     <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
                     </div>
                     <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
                 </div>
                 <div class="box bg-[#fff] p-4">
-                    <div class="admin flex gap-4">
+                    <div class="flex gap-4 admin">
                         <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
                         <div>
                             <p>Anh Tuan</p>
                             <span>10-11-2022</span>
                         </div>
                     </div>
-                    <div class="thumb relative overflow-hidden my-4">
+                    <div class="relative my-4 overflow-hidden thumb">
                         <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -152,7 +152,7 @@
 
                             <span>4</span>
                         </div>
-                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <p class="absolute z-10 type bottom-4 left-4"><span>house</span><span>sale</span></p>
                         <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
                             <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -164,9 +164,9 @@
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="object-cover w-full h-full duration-150 ease-out z-1 hover:ease-in hover:scale-105">
                     </div>
-                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <h3 class="my-3 text-xl name">modern flats and appartments</h3>
                     <p class="my-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -175,21 +175,21 @@
                           Hanoi city, Vietnamese             
                     </p>
                     <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
                     </div>
                     <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
                 </div>
                 <div class="box bg-[#fff] p-4">
-                    <div class="admin flex gap-4">
+                    <div class="flex gap-4 admin">
                         <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
                         <div>
                             <p>Anh Tuan</p>
                             <span>10-11-2022</span>
                         </div>
                     </div>
-                    <div class="thumb relative overflow-hidden my-4">
+                    <div class="relative my-4 overflow-hidden thumb">
                         <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -197,7 +197,7 @@
 
                             <span>4</span>
                         </div>
-                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <p class="absolute z-10 type bottom-4 left-4"><span>house</span><span>sale</span></p>
                         <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
                             <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -209,9 +209,9 @@
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="object-cover w-full h-full duration-150 ease-out z-1 hover:ease-in hover:scale-105">
                     </div>
-                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <h3 class="my-3 text-xl name">modern flats and appartments</h3>
                     <p class="my-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -220,21 +220,21 @@
                           Hanoi city, Vietnamese             
                     </p>
                     <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
                     </div>
                     <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
                 </div>
                 <div class="box bg-[#fff] p-4">
-                    <div class="admin flex gap-4">
+                    <div class="flex gap-4 admin">
                         <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
                         <div>
                             <p>Anh Tuan</p>
                             <span>10-11-2022</span>
                         </div>
                     </div>
-                    <div class="thumb relative overflow-hidden my-4">
+                    <div class="relative my-4 overflow-hidden thumb">
                         <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -242,7 +242,7 @@
 
                             <span>4</span>
                         </div>
-                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <p class="absolute z-10 type bottom-4 left-4"><span>house</span><span>sale</span></p>
                         <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
                             <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -254,9 +254,9 @@
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="object-cover w-full h-full duration-150 ease-out z-1 hover:ease-in hover:scale-105">
                     </div>
-                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <h3 class="my-3 text-xl name">modern flats and appartments</h3>
                     <p class="my-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -265,21 +265,21 @@
                           Hanoi city, Vietnamese             
                     </p>
                     <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
                     </div>
                     <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
                 </div>
                 <div class="box bg-[#fff] p-4">
-                    <div class="admin flex gap-4">
+                    <div class="flex gap-4 admin">
                         <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
                         <div>
                             <p>Anh Tuan</p>
                             <span>10-11-2022</span>
                         </div>
                     </div>
-                    <div class="thumb relative overflow-hidden my-4">
+                    <div class="relative my-4 overflow-hidden thumb">
                         <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -287,7 +287,7 @@
 
                             <span>4</span>
                         </div>
-                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <p class="absolute z-10 type bottom-4 left-4"><span>house</span><span>sale</span></p>
                         <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
                             <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -299,9 +299,9 @@
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="object-cover w-full h-full duration-150 ease-out z-1 hover:ease-in hover:scale-105">
                     </div>
-                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <h3 class="my-3 text-xl name">modern flats and appartments</h3>
                     <p class="my-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -310,21 +310,21 @@
                           Hanoi city, Vietnamese             
                     </p>
                     <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
                     </div>
                     <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
                 </div>
                 <div class="box bg-[#fff] p-4">
-                    <div class="admin flex gap-4">
+                    <div class="flex gap-4 admin">
                         <h3 class="h-11 w-11 rounded-full bg-[#EEEEEE] flex justify-center items-center ">T</h3>
                         <div>
                             <p>Anh Tuan</p>
                             <span>10-11-2022</span>
                         </div>
                     </div>
-                    <div class="thumb relative overflow-hidden my-4">
+                    <div class="relative my-4 overflow-hidden thumb">
                         <div class="absolute flex items-center total-images z-1 top-3 left-2 p-[0.5rem] text-white z-10" style="background-color: rgba(0, 0, 0, 0.3);">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -332,7 +332,7 @@
 
                             <span>4</span>
                         </div>
-                        <p class="type absolute bottom-4 left-4 z-10"><span>house</span><span>sale</span></p>
+                        <p class="absolute z-10 type bottom-4 left-4"><span>house</span><span>sale</span></p>
                         <div class="absolute z-10 text-white saved top-3 right-2 hover:bg-red-700">
                             <button type="submit" style="background-color: rgba(0, 0, 0, 0.3);" class="p-[0.5rem] ">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -344,9 +344,9 @@
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] mr-3 bg-red-700 hover:bg-black hover:text-white">house</p>
                             <p class="text-[1rem] py-[0.5rem] px-[1rem] bg-red-700 hover:bg-black hover:text-white">sale</p>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="w-full h-full object-cover duration-150 ease-out z-1 hover:ease-in hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 " alt="" class="object-cover w-full h-full duration-150 ease-out z-1 hover:ease-in hover:scale-105">
                     </div>
-                    <h3 class="name text-xl my-3">modern flats and appartments</h3>
+                    <h3 class="my-3 text-xl name">modern flats and appartments</h3>
                     <p class="my-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -355,9 +355,9 @@
                           Hanoi city, Vietnamese             
                     </p>
                     <div class="flex items-center justify-between p-4 bg-[#EEEEEE] mb-4">
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 h-6 mr-1 inline-block" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bed</title><path d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>3</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Bulb</title><path d="M304 384v-24c0-29 31.54-56.43 52-76 28.84-27.57 44-64.61 44-108 0-80-63.73-144-144-144a143.6 143.6 0 00-144 144c0 41.84 15.81 81.39 44 108 20.35 19.21 52 46.7 52 76v24M224 480h64M208 432h96M256 384V256" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M294 240s-21.51 16-38 16-38-16-38-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg><span>2</span></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-1 ionicon" viewBox="0 0 512 512"><title>Desktop</title><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg><span>750sqrt</span></p>
                     </div>
                     <a href="#" class="mt-2 w-full btn p-[0.5rem] bg-red-700 block text-center text-[1.4rem] text-white hover:text-white hover:bg-black">view property</a>           
                 </div>               
@@ -411,7 +411,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
 
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
     
 </body>
 </html>
